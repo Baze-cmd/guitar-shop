@@ -1,0 +1,183 @@
+.detailsSection {
+  padding: 2rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tabsContainer {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tabsHeader {
+  display: flex;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tab {
+  flex: 1;
+  padding: 1rem 2rem;
+  background: none;
+  border: none;
+  font-size: 1.125rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: #9ca3af;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.tab:hover {
+  color: #6b7280;
+}
+
+.tabActive {
+  color: #f97316 !important;
+  border-bottom-color: #f97316;
+}
+
+.tabContent {
+  padding: 2rem;
+}
+
+.specsContent {
+  max-width: 800px;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #374151;
+  margin-bottom: 2rem;
+}
+
+.specsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.specsList li {
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  color: #374151;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.specsList li:last-child {
+  border-bottom: none;
+}
+
+.specsList strong {
+  color: #111827;
+}
+
+.musiciansContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.musiciansGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 2rem;
+}
+
+.musicianCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.musicianImageWrapper {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background-color: #fce7e7;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.musicianImage {
+  object-fit: cover;
+}
+
+.musicianName {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #374151;
+  margin: 0;
+}
+
+.musicianBands {
+  font-size: 1rem;
+  color: #6b7280;
+  margin: 0.5rem 0 0 0;
+}
+
+.pagination {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.paginationDot {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: none;
+  background-color: #d1d5db;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.paginationDot:hover {
+  background-color: #9ca3af;
+}
+
+.paginationDotActive {
+  background-color: #6b7280;
+  box-shadow: 0 0 0 4px #f9731633;
+}
+
+.specsDot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #222;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .detailsSection {
+    padding: 1rem;
+  }
+
+  .tabContent {
+    padding: 1rem;
+  }
+
+  .tab {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+  }
+
+  .musiciansGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .musicianImageWrapper {
+    width: 250px;
+    height: 300px;
+  }
+}
